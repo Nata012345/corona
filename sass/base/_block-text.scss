@@ -1,0 +1,16 @@
+
+.block-text__title:not(:last-child) {
+  margin: 0px 0px 12px;
+}
+.block-text__title span{
+  color: $color-primery;
+}
+.block-text__title_blue span{
+  color: $color-primery-add;
+}
+.block-text__text:not(:last-child) {
+  margin: 0px 0px 24px;
+}
+.block-text_center {
+  text-align: center; 
+}

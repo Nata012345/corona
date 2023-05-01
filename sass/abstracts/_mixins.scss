@@ -1,0 +1,30 @@
+@mixin font ($size, $height, $weight, $style:normal, $space, $color){
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+  letter-spacing: $space;
+  color: $color;
+};
+
+@mixin media-laptop {
+  @media (max-width: $content-width) {
+    @content;
+  }
+}
+@mixin media-bigtablet {
+  @media (max-width: $bigtablet-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width:$tablet-width) {
+    @content;
+  }
+}
+@mixin media-bigmobile {
+  @media (max-width:$mobile-big-width) {
+    @content;
+  }
+}

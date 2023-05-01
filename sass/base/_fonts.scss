@@ -1,0 +1,24 @@
+h1 {
+  @include font($size:3.4rem, $height:126%, $weight:700, $space: 0, $color: $color-headers);
+}
+h2 {
+  @include font($size:3.4rem, $height:126%, $weight:700, $space: 0, $color: $color-headers)
+}
+h3 {
+  @include font($size:1.3rem, $height:126%, $weight:400, $space: 0.08em, $color: $color-add-text)
+}
+main text
+h4 {
+  @include font($size:1.2rem, $height:138%, $weight:700, $space: 0.08em, $color: $color-main-text)
+}
+// menu
+h5 {
+  @include font($size:1.0rem, $height:120%, $weight:700, $space: 0.14em, $color: $color-headers)
+}
+// button
+h6 {
+  @include font($size:1.0rem, $height:120%, $weight:800, $space: 0.14em, $color: $color-text-light)
+}
+p {
+  @include font($size:1.2rem, $height:138%, $weight:400, $space: 0.08em, $color: $color-main-text)
+}

@@ -1,0 +1,112 @@
+
+.healthcare {
+  background-color: $color-background-light;
+  padding: 80px 0px 30px 0px;
+  @include media-laptop {
+    padding: 40px 0px 30px 0px;
+  }
+} 
+.healthcare__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+.healthcare__block-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.healthcare__items {
+  display: flex;
+  max-width: 980px;
+  margin: 0 auto;
+  column-gap: 72px;
+  @include media-laptop {
+    column-gap: 30px;
+  }
+  @include media-bigtablet {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+.healthcare__column {
+  position: relative;
+  flex: 0 1 33.3333%;
+}
+.item-healthcare {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  background: $color-background-light;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 36px 17px;
+  
+}
+.item-healthcare__icon {
+  margin: 0px 0px 58px 0px;
+}
+.item-healthcare__title {
+  color: $color-headers;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
+  margin: 0 0 4px;
+}
+.item-healthcare_1 {
+
+}
+.healthcare__column_1::before {
+  content: "";
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  border-radius: 16px;
+  background-color: $color-primery;
+  bottom: -35px;
+  left: -25px;
+  transform: rotate(-30deg);
+}
+.healthcare__column_1::after {
+  content: "";
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  border-radius: 30px;
+  background-color: $color-primery;
+  top: 45px;
+  right: -45px;
+  transform: rotate(15deg);
+  
+}
+.healthcare__column_2::after {
+  content: "";
+  width: 127px;
+  height: 127px;
+  position: absolute;
+  border-radius: 30px;
+  background-color: $color-primery;
+  bottom: -30px;
+  right: -75px;
+  transform: rotate(-25deg);
+}
+.healthcare__column_3::after {
+  content: "";
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  border-radius: 16px;
+  background-color: $color-primery;
+  top: -30px;
+  right: -20px;
+  transform: rotate(-30deg);
+  @include media-tablet {
+    bottom: -30px;
+    left: -20px;
+  }
+}
+

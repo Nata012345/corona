@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  @include font($size:1.0rem, $height:100%, $weight:800, $space: 0.14em, $color: $color-text-light);
+  @extend %font-add;
+  height: 42px;
+  padding: 14px 30px;
+  text-transform: uppercase;
+  color: $color-text-light;
+  border-radius: 5px;
+  background-color: $color-primery;
+  border: 1px solid $color-primery;
+  @extend %transition;
+  &:hover {
+    background-color: $color-text-light;
+    color: $color-primery;
+    border: 1px solid $color-primery;
+  }
+}
+.button_blue {
+  background-color: $color-primery-add;
+  border: 1px solid $color-primery-add;
+  @extend %transition;
+  &:hover {
+    background-color: $color-text-light;
+    color: $color-primery-add;
+    border: 1px solid $color-primery-add;
+  }
+}
